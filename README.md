@@ -1,6 +1,43 @@
-# AngularDockerExample
+# Angular Docker Example
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+
+# Docker development environment
+
+Here you can find how to use docker to develop
+
+## Docker Compose
+
+Run `docker compose up` for a containerized dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+`CTRL+C` to exit
+
+## Docker Compose Useful Commands
+
+### Run container with build
+```
+docker compose up --build
+```
+
+### Run container in detach mode
+```
+docker compose up -d
+```
+
+### Stop container
+```
+docker compose stop
+```
+
+### Open shell in container (`web` service)
+```
+docker compose exec web /bin/sh
+```
+
+
+# Local Development
+
+Here you can find instruction to develop without docker
 
 ## Development server
 
